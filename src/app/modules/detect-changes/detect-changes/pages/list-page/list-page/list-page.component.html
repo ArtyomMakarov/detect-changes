@@ -1,5 +1,11 @@
 <h1>List of Items</h1>
-<ng-container *ngFor="let item of arrItems">
-  <app-item [item]="item"></app-item>
-</ng-container>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Model</th>
+    <th>&nbsp;</th>
+  </tr>
+  <tr *ngFor="let item of arrItems" app-item  [item]="item">
+  </tr>
+</table>
 

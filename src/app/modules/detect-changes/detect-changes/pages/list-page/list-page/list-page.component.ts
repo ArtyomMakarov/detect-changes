@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 
 @Component({
   selector: 'app-list-page',
@@ -29,9 +29,16 @@ export class ListPageComponent implements OnInit {
     },
   ];
 
+  public displayedColumns: string[] = ['name', 'model', 'button'];
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log("list page is inited");
   }
+
+  // ngDoCheck(): void {
+  //   console.log("list page is checked");
+  // }
 
 }

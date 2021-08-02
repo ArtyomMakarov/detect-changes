@@ -4,6 +4,7 @@ import { ListPageComponent } from './pages/list-page/list-page/list-page.compone
 import { ItemComponent } from './components/item/item/item.component';
 import { DetectChangesRoutingModule } from './detect-changes-routing.module';
 import { MatButtonModule } from '@angular/material/button';
+import {MatTableModule} from '@angular/material/table';
 
 
 
@@ -15,7 +16,8 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     CommonModule,
     DetectChangesRoutingModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTableModule
   ]
 })
 export class DetectChangesModule { }
