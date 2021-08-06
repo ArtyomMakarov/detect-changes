@@ -1,0 +1,18 @@
+<div class='Hotel'>
+
+  <app-hotel-title-lifecycle [hotel-name]="hotelName"></app-hotel-title-lifecycle>
+
+  Новое название: <input type=text [(ngModel)]="hotelName">
+  <br><br>
+
+  <div class='Photo'>
+    <img [src]="getPhoto()">
+  </div>
+
+  <div>
+    Комнаты:
+    {{getRooms()}}
+  </div>
+
+</div>
+
