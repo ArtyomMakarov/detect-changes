@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ItemComponent } from './item.component';
+import { DefaultStrategyComponent } from './default-strategy.component';
 
-describe('ItemComponent', () => {
-  let component: ItemComponent;
-  let fixture: ComponentFixture<ItemComponent>;
+describe('DefaultStrategyComponent', () => {
+  let component: DefaultStrategyComponent;
+  let fixture: ComponentFixture<DefaultStrategyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ItemComponent ]
+      declarations: [ DefaultStrategyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ItemComponent);
+    fixture = TestBed.createComponent(DefaultStrategyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

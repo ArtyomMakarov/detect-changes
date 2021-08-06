@@ -1,0 +1,21 @@
+<div class='Hotel'>
+
+  <input type="button" value="звёзд1++" (click)="inc1()">
+  <br>
+  <input type="button" value="звёзд2++" (click)="inc2()">
+
+  <app-hotel-title-onpush [hotel-name]="getName()"></app-hotel-title-onpush>
+
+  <app-hotel-stars-onpush [stars1]="stars1" [stars2]="stars2"></app-hotel-stars-onpush>
+
+  <div class='Photo'>
+    <img [src]="getPhoto()">
+  </div>
+
+  <div>
+    Комнаты:
+    {{getRooms()}}
+  </div>
+
+</div>
+

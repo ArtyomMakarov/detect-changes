@@ -1,0 +1,17 @@
+<div class='Hotel'>
+
+  <app-hotel-title-default [hotel-name]="getName()"></app-hotel-title-default>
+
+  <app-hotel-stars-default></app-hotel-stars-default>
+
+  <div class='Photo'>
+    <img [src]="getPhoto()">
+  </div>
+
+  <div>
+    Комнаты:
+    {{getRooms()}}
+  </div>
+
+</div>
+

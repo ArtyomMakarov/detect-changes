@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-hotel-lifecycle',
-  templateUrl: './hotel-lifecycle.component.html',
-  styleUrls: ['./hotel-lifecycle.component.scss']
+  selector: 'app-hotel-default',
+  templateUrl: './hotel-default.component.html',
+  styleUrls: ['./hotel-default.component.scss']
 })
-export class HotelLifecycleComponent {
+export class HotelDefaultComponent {
 
-  public hotelName: string='California';
+  private hotelName:string='California';
 
   private rooms:Array<{num:number,beds:number}>=[
     { num:22, beds:2 },
@@ -17,8 +17,10 @@ export class HotelLifecycleComponent {
 
   private photo:string="http://fe.it-academy.by/Examples/Hotel/hotel1.jpg";
 
-  constructor() {
-    //setInterval(()=>{console.log('timer')},3000);
+  private stars:number=4;
+
+  getName():string {
+    return this.hotelName;
   }
 
   getRooms():string {
@@ -31,4 +33,9 @@ export class HotelLifecycleComponent {
   getPhoto():string {
     return this.photo;
   };
+
+  getStars():number {
+    return this.stars;
+  };
+
 }
