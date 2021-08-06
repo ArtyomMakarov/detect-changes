@@ -1,15 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListPageComponent } from './pages/list-page/list-page/list-page.component';
+import { LifecycleHooksComponent } from './pages/lifecycle-hooks/lifecycle-hooks.component';
+import { DirtyCheckingComponent } from './pages/dirty-checking/dirty-checking.component';
+import { OnPushStrategyComponent } from './pages/on-push-strategy/on-push-strategy.component';
+
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'list',
+    redirectTo: 'lifecycle-hooks',
   },
   {
-    path: 'list',
-    component: ListPageComponent,
+    path: 'dirt-checking',
+    component: DirtyCheckingComponent,
+  },
+  {
+    path: 'onPush-strategy',
+    component: OnPushStrategyComponent,
+  },
+  {
+    path: 'lifecycle-hooks',
+    component: LifecycleHooksComponent,
   },
 ];
 
