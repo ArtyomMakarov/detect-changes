@@ -1,4 +1,4 @@
-import { Component , ChangeDetectorRef, ApplicationRef, OnInit, DoCheck, ChangeDetectionStrategy } from '@angular/core';
+import { Component , ChangeDetectorRef, ApplicationRef, DoCheck, ChangeDetectionStrategy } from '@angular/core';
 import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
 
@@ -8,7 +8,7 @@ import { take } from 'rxjs/operators';
   styleUrls: ['./hotel-onpush.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HotelOnpushComponent implements OnInit, DoCheck {
+export class HotelOnpushComponent implements DoCheck {
   
   private hotelName:string='California';
   private fakeHotelName = '';
@@ -28,10 +28,6 @@ export class HotelOnpushComponent implements OnInit, DoCheck {
   // }
   //constructor(private appRef:ApplicationRef) {
   //}
-  
-  ngOnInit() {
-    // this.callObservable();
-  }
 
   ngDoCheck() {
     console.log('Hotel DoCheck');

@@ -1,4 +1,4 @@
-import { Component, OnInit, DoCheck } from '@angular/core';
+import { Component, DoCheck } from '@angular/core';
 import { interval } from 'rxjs';
 import { take } from 'rxjs/operators';
 
@@ -7,7 +7,7 @@ import { take } from 'rxjs/operators';
   templateUrl: './hotel-default.component.html',
   styleUrls: ['./hotel-default.component.scss']
 })
-export class HotelDefaultComponent implements OnInit, DoCheck{
+export class HotelDefaultComponent implements DoCheck{
 
   private hotelName:string='California';
   private fakeHotelName = '';
@@ -21,11 +21,6 @@ export class HotelDefaultComponent implements OnInit, DoCheck{
   private photo:string="http://fe.it-academy.by/Examples/Hotel/hotel1.jpg";
 
   private stars:number=4;
-
-  ngOnInit() {
-    //call observable
-    // this.callObservable();
-  }
 
   ngDoCheck() {
     console.log('Hotel DoCheck');

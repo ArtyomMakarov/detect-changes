@@ -18,31 +18,31 @@ export class HotelTitleLifecycleComponent implements OnInit, OnChanges, DoCheck,
   }
 
   ngOnInit():void {
-    console.log("HotelTitleComponent::ngOnInit");
+    console.log("%c HotelTitleComponent::ngOnInit", "color: red");
   }
 
   ngOnChanges(changes: { [propName: string]: SimpleChange }):void {
-    console.log("HotelTitleComponent::ngOnChanges");
+    console.log("%c HotelTitleComponent::ngOnChanges", "color: red");
   }
 
   ngDoCheck():void {
-    console.log("HotelTitleComponent::ngDoCheck");
+    console.log("%c HotelTitleComponent::ngDoCheck", "color: red");
   }
 
   ngAfterContentInit():void {
-    console.log("HotelTitleComponent::ngAfterContentInit");
+    console.log("%c HotelTitleComponent::ngAfterContentInit", "color: red");
   }
 
   ngAfterContentChecked():void {
-    console.log("HotelTitleComponent::ngAfterContentChecked");
+    console.log("%c HotelTitleComponent::ngAfterContentChecked", "color: red");
   }
 
   ngAfterViewInit():void {
-    console.log("HotelTitleComponent::ngAfterViewInit");
+    console.log("%c HotelTitleComponent::ngAfterViewInit", "color: red");
   }
 
   ngAfterViewChecked():void {
-    console.log("HotelTitleComponent::ngAfterViewChecked");
+    console.log("%c HotelTitleComponent::ngAfterViewChecked", "color: red");
   }
 
 }

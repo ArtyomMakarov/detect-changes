@@ -3,3 +3,10 @@ app-hotel-title-lifecycle {
   display: block;
   border: 1px solid red;
 }
+
+:host {
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  border: 1px solid black;
+}

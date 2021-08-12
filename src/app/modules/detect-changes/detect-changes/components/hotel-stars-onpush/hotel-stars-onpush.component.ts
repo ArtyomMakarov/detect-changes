@@ -1,9 +1,9 @@
-import { Component, ChangeDetectionStrategy, Input, DoCheck, OnChanges } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, DoCheck, OnChanges } from "@angular/core";
 
 @Component({
-  selector: 'app-hotel-stars-onpush',
-  templateUrl: './hotel-stars-onpush.component.html',
-  styleUrls: ['./hotel-stars-onpush.component.scss'],
+  selector: "app-hotel-stars-onpush",
+  templateUrl: "./hotel-stars-onpush.component.html",
+  styleUrls: ["./hotel-stars-onpush.component.scss"],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HotelStarsOnpushComponent implements DoCheck, OnChanges {
@@ -14,11 +14,11 @@ export class HotelStarsOnpushComponent implements DoCheck, OnChanges {
   public stars3: {cnt: number} = { cnt: 33 };
 
   ngDoCheck() {
-    console.log('Stars DoCheck');
+    console.log("%c Stars DoCheck", "color: green");
   }
 
   ngOnChanges() {
-    console.log('Stars OnChanges');
+    console.log("%c Stars OnChanges", "color: green");
   }
 
   inc3() {
@@ -26,7 +26,7 @@ export class HotelStarsOnpushComponent implements DoCheck, OnChanges {
   }
 
   getStars() {
-    console.log("stars-component вызван метод getStars");
+    console.log("%c stars-component вызван метод getStars", "color: green");
     return 4;
   }
 

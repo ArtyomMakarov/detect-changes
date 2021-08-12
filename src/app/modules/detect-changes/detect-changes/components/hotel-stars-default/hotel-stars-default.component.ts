@@ -8,11 +8,11 @@ import { Component, DoCheck } from '@angular/core';
 export class HotelStarsDefaultComponent implements DoCheck {
 
   ngDoCheck() {
-    console.log("Stars DoCheck");
+    console.log("%c Stars DoCheck", "color: green");
   }
 
   getStars():number {
-    console.log("hotel-stars - вызван метод getStars");
+    console.log("%c hotel-stars - вызван метод getStars", "color: green");
     return 5;
   }
 }
